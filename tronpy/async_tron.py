@@ -870,6 +870,7 @@ class AsyncTron(object):
             origin_energy_limit=info.get("origin_energy_limit", 0),
             user_resource_percent=info.get("consume_user_resource_percent", 100),
             client=self,
+            origin_address=keys.to_base58check_address(info.get("origin_address", "")),
         )
         return cntr
 
